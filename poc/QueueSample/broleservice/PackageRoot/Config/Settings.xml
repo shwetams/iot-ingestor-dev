@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <!-- Add your custom configuration sections and parameters here -->
+  <Section Name="InputOutputConfigs">
+    <Parameter Name="InputQueueName" Value="b_queue" />
+    <Parameter Name="InputQueueServiceName" Value="rqueues" />
+    <Parameter Name="InputQueueServicePort" Value="8088" />
+    <Parameter Name="IsOutputQueue" Value="true" />
+    <Parameter Name="OutputQueueName" Value="c_queue" />
+    <Parameter Name="OutputQueueServiceName" Value="rqueues" />
+    <Parameter Name="OutputQueueServicePort" Value="8088" />
+    <Parameter Name="InputQueueOperation" Value="get" />
+    <Parameter Name="OutputQueueOperation" Value="add" />
+
+
+
+  </Section>
+
+</Settings>

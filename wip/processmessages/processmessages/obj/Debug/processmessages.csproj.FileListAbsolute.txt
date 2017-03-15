@@ -1,0 +1,1 @@
+C:\repos\iot-ingestor\wip\processmessages\processmessages\bin\Debug\processmessages.exe.config
