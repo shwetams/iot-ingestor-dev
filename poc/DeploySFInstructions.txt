@@ -1,0 +1,29 @@
+http://sfingestordashboard.azurewebsites.net
+
+Deploying Service Fabric
+
+Select-AzureRmSubscription -SubscriptionId dfb39b7d-a854-4795-b2ae-b0f9cb6cc5fb
+
+Connect-ServiceFabricCluster -ConnectionEndpoint devsgsf.southeastasia.cloudapp.azure.com:19000
+
+Import-Module "C:\Program Files\Microsoft SDKs\Service Fabric\Tools\PSModule\ServiceFabricSDK\ServiceFabricSDK.psm1"
+
+$path = "C:\repos\iot-ingestor-dev\poc\QueueSample\QueueSample\pkg\Debug"
+
+Copy-ServiceFabricApplicationPackage -ApplicationPackagePath $path -ApplicationPackagePathInImageStore QueueSampleDemo -ImageStoreConnectionString (Get-ImageStoreConnectionStringFromClusterManifest(Get-ServiceFabricClusterManifest))
+
+Register-ServiceFabricApplicationType QueueSampleDemo
+
+New-ServiceFabricApplication fabric:/QueueSample QueueSampleType 1.0.0
+
+
+Remove-AzureRmResource -ResourceName devsgsf -ResourceType "Microsoft.ServiceFabric/clusters" -ResourceGroupName sfingestor -Force
+
+
+
+
+
+
+Package:
+C:\repos\iot-ingestor-dev\poc\QueueSample\QueueSample\pkg\Debug
+

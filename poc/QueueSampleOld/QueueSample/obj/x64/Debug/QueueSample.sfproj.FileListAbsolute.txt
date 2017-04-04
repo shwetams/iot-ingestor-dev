@@ -1,0 +1,3 @@
+C:\repos\iot-ingestor\poc\QueueSample\QueueSample\obj\x64\Debug\QueueSample.sfprojResolveAssemblyReference.cache
+C:\repos\iot-ingestor-dev\poc\QueueSample\QueueSample\bin\Debug\QueueSample.config
+C:\repos\iot-ingestor-dev\poc\QueueSample\QueueSample\obj\x64\Debug\QueueSample.sfprojResolveAssemblyReference.cache

@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script type="text/javascript">
+        function refreshValues()
+        {
+            var hashNamePushed = "numMsges";
+            var hashNameA = "numMsgesA";
+            var hashNameB = "numMsgesB";
+            var hashNameC = "numMsgesC";
+            var url = "http://localhost:2927/api/values?hashName=";
+           // var url = "http://sfingestordashboard.azurewebsites.net/api/values?hashName=";
+            $.get(url + hashNamePushed, function (value, status) {
+                //alert("value returned" + value);
+                $('#msgPushed').text(value);
+               
+
+            });
+            $.get(url + hashNameA, function (value, status) {
+                $('#msgPushedA').html(value)
+            });
+
+            $.get(url + hashNameB, function (value, status) {
+                $('#msgPushedB').html(value);
+            });
+            $.get(url + hashNameC, function (value, status) {
+                $('#msgPushedC').html(value);
+            });
+            setTimeout(refreshValues, 120000);
+
+        }
+
+        
+            
+            $(document).ready(function () {
+                refreshValues();        
+            });           
+            
+        
+    </script>
+</head>
+<body>
+    <div class=".container">
+        <h1>Statistics of the Service Fabric IoT Ingestor running <a href="">here</a></h1>
+        <table>
+            <tr>
+                <td>Number of messages pushed for processing <span class="badge" id="msgPushed"></span></td>
+                
+            </tr>
+            <tr>
+                <td>Number of messages pushed for processing <span class="badge" id="msgPushedA"></span></td>
+            </tr>
+            <tr>
+                <td>Number of messages pushed for processing <span class="badge" id="msgPushedB"></span></td>
+            </tr>
+            <tr>
+                <td>Number of messages pushed for processing <span class="badge" id="msgPushedC"></span></td>
+            </tr>
+            
+            
+            
+        </table>
+    </div>
+</body>
+</html>

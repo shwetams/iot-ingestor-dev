@@ -1,0 +1,1 @@
+C:\repos\iot-ingestor-dev\Version1\SFIoTIngestor\SFIoTIngestor\obj\x64\Debug\SFIoTIngestor.sfprojResolveAssemblyReference.cache

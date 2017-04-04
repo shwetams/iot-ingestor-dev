@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "SFIoTIngestor", "SFIoTIngestor\SFIoTIngestor.sfproj", "{2548A9AC-AC2F-46D6-AAA0-3BA2602FD18F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeCompress", "DeCompress\DeCompress.csproj", "{B04F8AA6-231F-4DBD-A377-B3341C6D8425}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeAggregate", "DeAggregate\DeAggregate.csproj", "{820F979F-58B6-43FC-BD7F-40E518D6BCED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersistentStore", "PersistentStore\PersistentStore.csproj", "{1B78EFD1-9777-4E6E-BA9C-828BE23499CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessingQueues", "ProcessingQueues\ProcessingQueues.csproj", "{952F2A20-2046-4A8D-BD4F-38E4FEAC98DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2548A9AC-AC2F-46D6-AAA0-3BA2602FD18F}.Debug|x64.ActiveCfg = Debug|x64
+		{2548A9AC-AC2F-46D6-AAA0-3BA2602FD18F}.Debug|x64.Build.0 = Debug|x64
+		{2548A9AC-AC2F-46D6-AAA0-3BA2602FD18F}.Debug|x64.Deploy.0 = Debug|x64
+		{2548A9AC-AC2F-46D6-AAA0-3BA2602FD18F}.Release|x64.ActiveCfg = Release|x64
+		{2548A9AC-AC2F-46D6-AAA0-3BA2602FD18F}.Release|x64.Build.0 = Release|x64
+		{2548A9AC-AC2F-46D6-AAA0-3BA2602FD18F}.Release|x64.Deploy.0 = Release|x64
+		{B04F8AA6-231F-4DBD-A377-B3341C6D8425}.Debug|x64.ActiveCfg = Debug|x64
+		{B04F8AA6-231F-4DBD-A377-B3341C6D8425}.Debug|x64.Build.0 = Debug|x64
+		{B04F8AA6-231F-4DBD-A377-B3341C6D8425}.Release|x64.ActiveCfg = Release|x64
+		{B04F8AA6-231F-4DBD-A377-B3341C6D8425}.Release|x64.Build.0 = Release|x64
+		{820F979F-58B6-43FC-BD7F-40E518D6BCED}.Debug|x64.ActiveCfg = Debug|x64
+		{820F979F-58B6-43FC-BD7F-40E518D6BCED}.Debug|x64.Build.0 = Debug|x64
+		{820F979F-58B6-43FC-BD7F-40E518D6BCED}.Release|x64.ActiveCfg = Release|x64
+		{820F979F-58B6-43FC-BD7F-40E518D6BCED}.Release|x64.Build.0 = Release|x64
+		{1B78EFD1-9777-4E6E-BA9C-828BE23499CD}.Debug|x64.ActiveCfg = Debug|x64
+		{1B78EFD1-9777-4E6E-BA9C-828BE23499CD}.Debug|x64.Build.0 = Debug|x64
+		{1B78EFD1-9777-4E6E-BA9C-828BE23499CD}.Release|x64.ActiveCfg = Release|x64
+		{1B78EFD1-9777-4E6E-BA9C-828BE23499CD}.Release|x64.Build.0 = Release|x64
+		{952F2A20-2046-4A8D-BD4F-38E4FEAC98DE}.Debug|x64.ActiveCfg = Debug|x64
+		{952F2A20-2046-4A8D-BD4F-38E4FEAC98DE}.Debug|x64.Build.0 = Debug|x64
+		{952F2A20-2046-4A8D-BD4F-38E4FEAC98DE}.Release|x64.ActiveCfg = Release|x64
+		{952F2A20-2046-4A8D-BD4F-38E4FEAC98DE}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

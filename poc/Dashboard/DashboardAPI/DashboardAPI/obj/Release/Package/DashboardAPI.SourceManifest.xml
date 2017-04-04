@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\repos\iot-ingestor-dev\poc\Dashboard\DashboardAPI\DashboardAPI\obj\Release\Package\PackageTmp" />
+  <setAcl path="C:\repos\iot-ingestor-dev\poc\Dashboard\DashboardAPI\DashboardAPI\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\repos\iot-ingestor-dev\poc\Dashboard\DashboardAPI\DashboardAPI\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

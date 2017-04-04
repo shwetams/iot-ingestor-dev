@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/SFIoTIngestor" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters>
+    <Parameter Name="PersistentStore_InstanceCount" Value="1" />
+    <Parameter Name="DeAggregate_InstanceCount" Value="1" />
+    <Parameter Name="DeCompress_InstanceCount" Value="1" />
+  </Parameters>
+</Application>

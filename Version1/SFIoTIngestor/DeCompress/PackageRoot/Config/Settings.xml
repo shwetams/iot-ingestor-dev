@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <!-- Add your custom configuration sections and parameters here -->
+  <!--
+  <Section Name="MyConfigSection">
+    <Parameter Name="MyParameter" Value="Value1" />
+  </Section>
+  -->
+  <Section Name="InputOutputConfigs">
+    <Parameter Name="InputQueueName" Value="decompress" />
+    <Parameter Name="InputQueueServiceName" Value="rqueues" />
+    <Parameter Name="InputQueueServicePort" Value="8088" />
+    <Parameter Name="IsOutputQueue" Value="true" />
+    <!-- The output should be changed to deaggregate once the deaggregate service is running -->
+    <Parameter Name="OutputQueueName" Value="persistentstore" />
+    <Parameter Name="OutputQueueServiceName" Value="rqueues" />
+    <Parameter Name="OutputQueueServicePort" Value="8088" />
+    <Parameter Name="InputQueueOperation" Value="get" />
+    <Parameter Name="OutputQueueOperation" Value="add" />
+
+  </Section>
+</Settings>

@@ -1,0 +1,1 @@
+C:\repos\iot-ingestor-dev\Version1\SFIoTIngestor\ProcessMessage\obj\x64\Debug\ProcessMessage.csprojResolveAssemblyReference.cache
