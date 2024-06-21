@@ -91,7 +91,7 @@ namespace ProcessMessage
             Random rnd = new Random();
             Random rndDeviceID = new Random();
             Random rndLocation = new Random();
-            ConnectionMultiplexer conn = ConnectionMultiplexer.Connect("devsgredis.redis.cache.windows.net:6380,password=WCDjxjd0pgKcImyhsJ/IID0lnNtZNQu1aRUbsdv97io=,ssl=True,abortConnect=False");
+            ConnectionMultiplexer conn = ConnectionMultiplexer.Connect("devsgredis.redis.cache.windows.net:6380,password=,ssl=True,abortConnect=False");
 
             string serviceuri = "http://" + FabricRuntime.GetNodeContext().IPAddressOrFQDN + ":" + port.ToString() + "/rqueues";
 
